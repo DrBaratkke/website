@@ -1,0 +1,2709 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dr. Baratkke - World Class Care</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Theme Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "accent-gold": "#C5A065",
+                        "background-light": "#f6f6f8",
+                        "background-ivory": "#F9F9F7", // Added specifically for the luxury feel request
+                        "background-dark": "#111621",
+                        "navy-dark": "#111317",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom smooth scroll and transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .fade-in-up-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .fade-in-up-delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .fade-in-up-delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-ivory dark:bg-background-dark text-navy-dark dark:text-white overflow-x-hidden antialiased">
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f0f2f4] dark:border-gray-800 transition-all duration-300">
+        <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 text-primary flex items-center justify-center">
+                    <span class="material-symbols-outlined !text-[32px]">dentistry</span>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-navy-dark dark:text-white">Dr. Baratkke</span>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium text-navy-dark/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors"
+                    href="#">Services</a>
+                <a class="text-sm font-medium text-navy-dark/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors"
+                    href="#">Technology</a>
+                <a class="text-sm font-medium text-navy-dark/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors"
+                    href="#">About</a>
+                <a class="text-sm font-medium text-navy-dark/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors"
+                    href="#">Contact</a>
+                <div class="w-px h-4 bg-gray-300 dark:bg-gray-600"></div>
+                <a class="text-sm font-medium text-navy-dark/80 hover:text-primary dark:text-gray-300 dark:hover:text-white transition-colors flex items-center gap-1"
+                    href="#">
+                    <span class="material-symbols-outlined !text-[18px]">language</span>
+                    <span>EN</span>
+                </a>
+            </div>
+            <!-- CTA & Mobile Menu -->
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden lg:flex items-center justify-center h-10 px-6 rounded-lg bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                    Book Appointment
+                </button>
+                <button class="md:hidden p-2 text-navy-dark dark:text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="relative min-h-screen w-full flex items-center pt-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
+            <!-- Using a gradient overlay to ensure text readability on the left -->
+            <div
+                class="absolute inset-0 z-10 bg-gradient-to-r from-background-ivory via-background-ivory/80 to-transparent dark:from-background-dark dark:via-background-dark/80 dark:to-background-dark/20 w-full md:w-[70%]">
+            </div>
+            <div
+                class="absolute inset-0 z-10 bg-gradient-to-t from-background-ivory via-transparent to-transparent dark:from-background-dark md:hidden">
+            </div>
+            <img alt="Bright modern dental clinic interior with sunlight"
+                class="w-full h-full object-cover object-center animate-kenburns"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi8FmHgBuwZE6wSOOwlTtazQu_9gG3iffDPWvNCV_hBDFFlf-uJFMoXRUAzwZ7veICd735Vtk87RBXTAfJxeLBqPAXhOonoV3PhR0xE5CC8CkFqcvKsPN2GOCDnWydpUcjPe4TZ1LxRI_QfiXBajI48Mr37WWc-mcNZOgLo0y_kL_altUQRxCQCuAP0d3K04jC3FanRJ_YE8x1ZFxHnXRy1Wb8BjVafqKpb1Qrstu2YOChfBCc8BE1bGpbQrz8o5q2cC8A-_zFQdv0" />
+        </div>
+        <div class="relative z-20 max-w-[1280px] mx-auto px-6 w-full flex flex-col justify-center h-full py-12 md:py-0">
+            <div class="max-w-[720px] flex flex-col gap-8">
+                <!-- Badge -->
+                <div
+                    class="fade-in-up inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-gold/10 border border-accent-gold/20 w-fit">
+                    <span class="material-symbols-outlined text-accent-gold !text-[16px]">stars</span>
+                    <span class="text-xs font-semibold text-accent-gold uppercase tracking-wider">German
+                        Excellence</span>
+                </div>
+                <!-- Headline -->
+                <h1
+                    class="fade-in-up fade-in-up-delay-1 text-[42px] leading-[1.1] md:text-6xl lg:text-[72px] font-light text-navy-dark dark:text-white tracking-tight">
+                    World-Class Dental Care with <span class="font-semibold text-primary">Precision</span> &amp; <span
+                        class="italic font-normal font-serif">Elegance</span>
+                </h1>
+                <!-- Subheading -->
+                <p
+                    class="fade-in-up fade-in-up-delay-2 text-lg md:text-xl text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-[580px]">
+                    Experience the pinnacle of Swiss-standard dentistry. Tailored treatments for our discerning
+                    international clientele in a serene, state-of-the-art environment.
+                </p>
+                <!-- CTAs -->
+                <div class="fade-in-up fade-in-up-delay-3 flex flex-col sm:flex-row gap-4 pt-4">
+                    <button
+                        class="h-14 px-8 rounded-lg bg-primary hover:bg-blue-800 text-white text-base font-bold tracking-wide transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
+                        Book Appointment
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                    <!-- <button
+                        class="h-14 px-8 rounded-lg border border-accent-gold/40 hover:border-accent-gold text-navy-dark dark:text-white hover:bg-accent-gold/5 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-accent-gold">flight_takeoff</span>
+                        <span class="font-semibold">International Patients</span>
+                    </button> -->
+                </div>
+                <!-- Trust Indicators (Mini Feature Section integrated) -->
+                <div
+                    class="fade-in-up fade-in-up-delay-3 pt-12 md:pt-16 border-t border-gray-200/60 dark:border-gray-700/60 mt-8 max-w-[600px]">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Certified Excellence
+                    </p>
+                    <div
+                        class="flex flex-wrap gap-8 md:gap-12 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="flex items-center gap-2 group cursor-default">
+                            <span
+                                class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">verified_user</span>
+                            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Swiss Dental
+                                Assoc.</span>
+                        </div>
+                        <div class="flex items-center gap-2 group cursor-default">
+                            <span
+                                class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">award_star</span>
+                            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">ISO 9001 Certified</span>
+                        </div>
+                        <div class="flex items-center gap-2 group cursor-default">
+                            <span
+                                class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">favorite</span>
+                            <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Top Rated 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Scroll Indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50 hidden md:flex">
+            <span class="text-[10px] uppercase tracking-widest text-navy-dark dark:text-white">Scroll</span>
+            <span class="material-symbols-outlined text-navy-dark dark:text-white">keyboard_arrow_down</span>
+        </div>
+    </div>
+    <!-- Stats/Feature Highlights Strip (Bonus context for luxury) -->
+    <section class="bg-white dark:bg-background-dark border-b border-[#f0f2f4] dark:border-gray-800">
+        <div
+            class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#f0f2f4] dark:divide-gray-800">
+            <div class="p-10 flex flex-col gap-3 group hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                <div
+                    class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">dentistry</span>
+                </div>
+                <h3 class="text-lg font-bold text-navy-dark dark:text-white">Implantology Experts</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Pioneering minimally invasive
+                    techniques for lifetime restoration.</p>
+            </div>
+            <div class="p-10 flex flex-col gap-3 group hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                <div
+                    class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">spa</span>
+                </div>
+                <h3 class="text-lg font-bold text-navy-dark dark:text-white">Pain-Free Experience</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">State-of-the-art anesthesia and
+                    calming therapies for total comfort.</p>
+            </div>
+            <div class="p-10 flex flex-col gap-3 group hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                <div
+                    class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">diamond</span>
+                </div>
+                <h3 class="text-lg font-bold text-navy-dark dark:text-white">Aesthetic Perfection</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Digital smile design to create
+                    natural, harmonious, and radiant smiles.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Dr. Baratkke - Luxury Dental Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#f9f8f6", // Adjusted slightly to be more "Ivory"
+                        "background-dark": "#111621",
+                        "accent-gold": "#C5A572", // Champagne Gold
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #d1d5db;
+            border-radius: 20px;
+        }
+
+        /* Smooth fade-in for content */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#111317] dark:text-white font-display overflow-x-hidden antialiased selection:bg-accent-gold/30">
+    <!-- Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f0f2f4] dark:border-white/10 transition-colors duration-300">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4 text-primary dark:text-white cursor-pointer group">
+                <div class="size-6 text-accent-gold transition-transform duration-500 group-hover:rotate-180">
+                    <span class="material-symbols-outlined text-2xl">dentistry</span>
+                </div>
+                <h2 class="text-lg font-bold tracking-tight text-primary dark:text-white">ELENA VANCE</h2>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                    href="#">Philosophy</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                    href="#">Credentials</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                    href="#">Clinic</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                    href="#">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <button
+                    class="hidden sm:flex h-10 px-6 items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-white text-sm font-bold tracking-wide transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/30 transform hover:-translate-y-0.5">
+                    Book Consultation
+                </button>
+                <button
+                    class="flex items-center justify-center size-10 rounded-full border border-gray-200 dark:border-white/10 text-xs font-bold hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                    EN
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content Area -->
+    <main class="w-full max-w-[1440px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[calc(100vh-80px)]">
+            <!-- Left Column: Portrait -->
+            <div class="lg:col-span-5 relative order-2 lg:order-1 h-[500px] lg:h-auto overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[2s] ease-in-out group-hover:scale-105"
+                    data-alt="Professional portrait of a female dentist smiling warmly in a bright modern office"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEhHv6AtRwjQoqste87RUBfhu6cNtabj9qDmkUilIv2QQtE3CwkxkJ8_eX92xHZ1I4RpO306mcXCdadIqU8_l70CP5M9mA-MZmoR6tLvNdiA1DIhstVLdcKZnTwj7qP2O1LCcKQd6NxHzWXtP5EHCyEL8-ZLUhUmNzItY5cpC880ZQSBpd99bxj6cahMmVRRckuDIf3OLza99oXEcZJF3JrrCFjUAKU5EW7-zrSMryDvZYlVAzhXP95yeEj6XVcerEw2aa-NimaUuv');">
+                </div>
+                <!-- Subtle overlay for text readability if needed, though clean is better -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 lg:opacity-40">
+                </div>
+                <!-- Floating Badge -->
+                <div
+                    class="absolute bottom-8 left-8 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 rounded-lg shadow-xl max-w-[200px] border-l-4 border-accent-gold animate-fade-in delay-300 hidden lg:block">
+                    <p class="text-xs font-bold text-accent-gold uppercase tracking-wider mb-1">Board Certified</p>
+                    <p class="text-sm font-medium text-primary dark:text-white leading-tight">Swiss Academy of Esthetic
+                        Dentistry</p>
+                </div>
+            </div>
+            <!-- Right Column: Content -->
+            <div
+                class="lg:col-span-7 flex flex-col justify-center px-6 py-12 lg:px-20 lg:py-20 bg-background-light dark:bg-background-dark order-1 lg:order-2">
+                <div class="max-w-2xl animate-fade-in">
+                    <!-- Header -->
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="h-[1px] w-8 bg-accent-gold"></span>
+                        <span class="text-accent-gold font-bold uppercase tracking-[0.15em] text-xs">Meet the
+                            Doctor</span>
+                    </div>
+                    <h1
+                        class="text-4xl lg:text-6xl font-extrabold text-primary dark:text-white leading-[1.1] tracking-tight mb-6">
+                        Dr. Elena Vance,<br />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary/60 to-primary dark:from-white/60 dark:to-white font-medium">D.D.S.,
+                            M.Sc.</span>
+                    </h1>
+                    <h2
+                        class="text-xl lg:text-2xl text-[#4b5563] dark:text-gray-300 font-light leading-relaxed mb-8 border-l-2 border-accent-gold/50 pl-6 italic">
+                        "Dentistry is the intersection of medicine and art. Every treatment is designed not just for
+                        health, but for harmony and longevity."
+                    </h2>
+                    <!-- Bio -->
+                    <div
+                        class="prose prose-lg dark:prose-invert text-gray-600 dark:text-gray-400 mb-10 font-normal leading-loose">
+                        <p class="mb-4">
+                            Trained in the rigorous standards of Swiss academies and refined through over 15 years of
+                            practice in Zurich, New York, and London, Dr. Vance brings a unique global perspective to
+                            her clinic.
+                        </p>
+                        <p>
+                            She specializes in minimally invasive restorative procedures, believing that preserving the
+                            natural tooth structure is the ultimate sophistication. Her clinic is a sanctuary for the
+                            discerning patient who values precision, privacy, and an unhurried atmosphere.
+                        </p>
+                    </div>
+                    <!-- Credentials / Stats Grid -->
+                    <div
+                        class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-12 border-t border-b border-accent-gold/20 py-8">
+                        <div class="flex flex-col gap-1">
+                            <span class="text-3xl font-bold text-primary dark:text-white">15+</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-500 font-bold">Years
+                                Experience</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-3xl font-bold text-primary dark:text-white">2k+</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-500 font-bold">Smiles
+                                Restored</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-3xl font-bold text-primary dark:text-white">2</span>
+                            <span class="text-xs uppercase tracking-widest text-gray-500 font-bold">Board
+                                Certifications</span>
+                        </div>
+                    </div>
+                    <!-- Education List -->
+                    <div class="space-y-4 mb-10">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-primary dark:text-white mb-4">
+                            Education &amp; Memberships</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 group">
+                                <span
+                                    class="material-symbols-outlined text-accent-gold text-lg group-hover:scale-110 transition-transform">school</span>
+                                <span>Doctor of Dental Surgery, <strong class="text-primary dark:text-white">University
+                                        of Zurich</strong></span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 group">
+                                <span
+                                    class="material-symbols-outlined text-accent-gold text-lg group-hover:scale-110 transition-transform">school</span>
+                                <span>Master of Science in Esthetic Dentistry, <strong
+                                        class="text-primary dark:text-white">King's College London</strong></span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700 dark:text-gray-300 group">
+                                <span
+                                    class="material-symbols-outlined text-accent-gold text-lg group-hover:scale-110 transition-transform">workspace_premium</span>
+                                <span>Fellow, <strong class="text-primary dark:text-white">American Academy of Cosmetic
+                                        Dentistry</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Signature & CTA -->
+                    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-8 animate-fade-in delay-200">
+                        <div class="flex flex-col gap-2">
+                            <!-- Signature placeholder -->
+                            <div class="h-12 w-32 bg-contain bg-no-repeat opacity-60"
+                                data-alt="Artistic signature of Dr. Elena Vance"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCX8OKtQtf-RqjMHbBoCiRPnwXLvQ22V9gxdWFnXPcYxEbgY6irk8hF4o9lAhcLvUSLI-WwahhLzD3wpkFeGmixi3ewb45GBua7DAxxDpak0wSz8kw328dLnUdVhxck9219sAbWAZ9odvDXuGSp_FnzWkBf5da8wfF4-ysYx1NGEa0Mtisq-ZsUyYENITQQLwwQvpF-ayb4aLJSlroVCeNHMzzqvU7HFhif6CjehV_JShoIBV1MO40OYs_Tj8W6Qkg6CVLY5EZzZaqQ');">
+                            </div>
+                            <p class="text-xs text-gray-400">Dr. Elena Vance</p>
+                        </div>
+                        <button
+                            class="group flex items-center justify-between gap-4 h-14 pl-6 pr-2 bg-primary text-white rounded-lg hover:bg-[#153e94] transition-all duration-300 shadow-xl shadow-primary/20 w-full sm:w-auto min-w-[200px]">
+                            <span class="text-sm font-bold tracking-widest uppercase">Book Visit</span>
+                            <div
+                                class="size-10 bg-white/10 rounded-md flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                                <span class="material-symbols-outlined text-white">arrow_forward</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Simple -->
+    <footer class="bg-white dark:bg-background-dark border-t border-gray-100 dark:border-white/5 py-12">
+        <div class="max-w-[1440px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-400">
+                © 2024 Elena Vance Dental Clinic. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy</a>
+                <a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Terms</a>
+                <a class="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Imprint</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lumière Dental - Services</title>
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "ivory": "#F9F9F7",
+                        "gold-accent": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 40px -5px rgba(25, 76, 179, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom smooth scroll and subtle animations */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .group:hover .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-[#111317] dark:text-white antialiased transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-background-dark/80 border-b border-[#f0f2f4] dark:border-gray-800">
+            <div class="layout-container flex justify-center w-full">
+                <div class="w-full max-w-[1280px] px-6 md:px-10 lg:px-20 py-4 flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-3 text-primary dark:text-white">
+                        <div class="size-6 text-primary">
+                            <span class="material-symbols-outlined text-3xl">dentistry</span>
+                        </div>
+                        <h2 class="text-[#111317] dark:text-white text-lg font-bold tracking-tight uppercase">Lumière
+                            Dental</h2>
+                    </div>
+                    <!-- Desktop Menu -->
+                    <nav class="hidden md:flex flex-1 justify-end gap-10 items-center">
+                        <div class="flex items-center gap-8">
+                            <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                href="#">Expertise</a>
+                            <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                href="#">Clinic</a>
+                            <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                href="#">Team</a>
+                            <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                href="#">Contact</a>
+                        </div>
+                        <button
+                            class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold tracking-wide hover:bg-[#153e94] transition-colors shadow-md hover:shadow-lg">
+                            <span class="truncate">Book Consultation</span>
+                        </button>
+                    </nav>
+                    <!-- Mobile Menu Icon -->
+                    <button class="md:hidden text-[#111317] dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow flex flex-col items-center">
+            <!-- Page Heading -->
+            <section class="w-full max-w-[960px] px-6 py-16 md:py-24 flex flex-col gap-6 text-center">
+                <div class="flex flex-col gap-4">
+                    <h5 class="text-primary text-sm font-bold tracking-[0.15em] uppercase">Our Services</h5>
+                    <h1
+                        class="text-[#111317] dark:text-white text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight">
+                        World-Class <span class="font-bold">Dental Artistry</span>
+                    </h1>
+                    <p
+                        class="text-[#646f87] dark:text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mt-2">
+                        Precision Swiss engineering meets luxury hospitality. Explore our specialized treatments
+                        designed for the international patient seeking perfection.
+                    </p>
+                </div>
+            </section>
+            <!-- Service Grid -->
+            <section class="w-full max-w-[1280px] px-6 md:px-10 lg:px-20 pb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1: Cosmetic Dentistry -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">diamond</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Cosmetic Dentistry</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Bespoke veneers and aesthetic refinements tailored to your facial structure.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Card 2: Dental Implants -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">architecture</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Dental Implants</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Permanent, natural-looking replacement using top-tier Swiss materials.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Card 3: Smile Makeover -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">sentiment_very_satisfied</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Smile Makeover</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Comprehensive digital planning for a complete and harmonious transformation.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Card 4: Root Canal -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">healing</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Root Canal</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Pain-free endodontic therapy preserving your natural teeth with microscopic precision.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Card 5: Invisalign & Braces -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">blur_on</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Invisalign &amp; Braces</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Discreet orthodontic alignment solutions for adults and teens.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Card 6: Teeth Whitening -->
+                    <div
+                        class="group relative flex flex-col gap-6 p-8 rounded-xl bg-white dark:bg-[#1a202e] border border-gray-100 dark:border-gray-800 shadow-soft hover:shadow-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="size-12 rounded-full bg-blue-50 dark:bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-3xl">flare</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3
+                                class="text-[#111317] dark:text-white text-xl font-semibold leading-tight group-hover:text-primary transition-colors">
+                                Teeth Whitening</h3>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm font-normal leading-relaxed">
+                                Professional clinical brightening for an instantly radiant smile.
+                            </p>
+                        </div>
+                        <div
+                            class="mt-auto pt-4 flex items-center text-primary text-sm font-bold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                            Discover More <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="w-full bg-white dark:bg-[#1a202e] border-y border-gray-100 dark:border-gray-800">
+                <div
+                    class="w-full max-w-[1280px] mx-auto px-6 py-20 md:py-32 flex flex-col items-center text-center gap-8">
+                    <div class="flex flex-col gap-4 max-w-2xl">
+                        <h2 class="text-[#111317] dark:text-white text-3xl md:text-4xl font-bold tracking-tight">
+                            Begin Your Journey to Confidence
+                        </h2>
+                        <p class="text-[#646f87] dark:text-gray-400 text-base md:text-lg font-normal">
+                            We invite you to schedule a private consultation with our specialists. Experience dental
+                            care redefined.
+                        </p>
+                    </div>
+                    <button
+                        class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-white text-base font-bold tracking-wide hover:bg-[#153e94] transition-all hover:scale-105 shadow-xl shadow-primary/20">
+                        Book Appointment
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
+            <div class="w-full max-w-[1280px] mx-auto px-6 py-12 flex flex-col gap-8 items-center text-center">
+                <div class="flex items-center gap-3 text-primary dark:text-white opacity-80">
+                    <span class="material-symbols-outlined text-2xl">dentistry</span>
+                    <span class="font-bold tracking-widest text-sm">LUMIÈRE DENTAL</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-12">
+                    <a class="text-[#646f87] dark:text-gray-500 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="text-[#646f87] dark:text-gray-500 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Terms of Service</a>
+                    <a class="text-[#646f87] dark:text-gray-500 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Patient Portal</a>
+                    <a class="text-[#646f87] dark:text-gray-500 text-sm font-medium hover:text-primary transition-colors"
+                        href="#">Locations</a>
+                </div>
+                <p class="text-[#9aa2b1] dark:text-gray-600 text-sm">
+                    © 2024 Lumière Dental Clinic. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>International Patients - LuxDental</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "secondary": "#1e293b",
+                        "accent": "#d1c4b0", /* Champagne/Gold accent */
+                        "background-light": "#f9f9f7", /* Ivory/Off-white */
+                        "background-dark": "#111621",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2233",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for horizontal sections */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-secondary dark:text-gray-100 font-display antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-[#e5e7eb] dark:border-gray-800 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm px-6 py-4">
+            <div class="mx-auto flex max-w-7xl items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary size-8">
+                        <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-primary dark:text-white text-xl font-bold tracking-tight">LuxDental</h2>
+                </div>
+                <nav class="hidden md:flex flex-1 justify-center gap-8">
+                    <a class="text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                        href="#">Home</a>
+                    <a class="text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                        href="#">Treatments</a>
+                    <a class="text-primary font-semibold text-sm leading-normal border-b-2 border-primary pb-0.5"
+                        href="#">International Patients</a>
+                    <a class="text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                        href="#">Gallery</a>
+                    <a class="text-secondary dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden md:flex bg-primary hover:bg-blue-700 text-white text-sm font-bold h-10 px-6 rounded-lg items-center justify-center transition-all shadow-md hover:shadow-lg">
+                        Book Consultation
+                    </button>
+                    <!-- Mobile Menu Icon -->
+                    <button class="md:hidden p-2 text-secondary dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative h-[600px] w-full bg-cover bg-center"
+                data-alt="Serene modern dental clinic waiting area with high end furniture and soft lighting"
+                style='background-image: linear-gradient(rgba(17, 22, 33, 0.4), rgba(17, 22, 33, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqv8rvCIB6hW8jg4UAi3fT1h8p8T8vGBiMXFk6CHsmgLgxgnXNej1DDXV2vIjQvx3vcwCt3Mjlt0awe39sF1CzrNqfSJQt2XJNHkQvo_cWdyCA0M00CdS2coGxdjk7lBRyqP_vOenqGxPtq56OuRdpmkkJKWRLhNR3sKXcOCGuwnyEA6cNKvsQcGun9m77a1GPd8EXVtzsFp3F9yvY0R7jGrRABksRRUr8ohzwwScm0vDKOy6IW95-2A_5CiVwwx8k0PJNDigEUnYx");'>
+                <div class="absolute inset-0 flex items-center justify-center p-6 text-center">
+                    <div class="max-w-4xl space-y-6">
+                        <span
+                            class="inline-block px-3 py-1 rounded-full border border-white/30 bg-white/10 text-white text-xs font-medium tracking-widest uppercase backdrop-blur-sm">
+                            Medical Tourism Excellence
+                        </span>
+                        <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
+                            World-Class Care, <br />
+                            <span class="font-bold">Curated for the Global Citizen</span>
+                        </h1>
+                        <p class="text-gray-200 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                            Experience Swiss precision dentistry combined with the comfort of a luxury holiday. We
+                            manage the logistics so you can focus on your smile.
+                        </p>
+                        <div class="pt-6">
+                            <button
+                                class="bg-white hover:bg-gray-100 text-primary text-base font-bold h-12 px-8 rounded-lg shadow-xl transition-all transform hover:scale-105">
+                                Plan Your Journey
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Introduction -->
+            <section class="py-20 px-6 bg-background-light dark:bg-background-dark">
+                <div class="max-w-7xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary dark:text-white mb-6">A Seamless Experience
+                        from Arrival to Departure</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                        We understand that traveling for medical care requires trust and preparation. Our dedicated
+                        international patient coordinators ensure that every step of your visit is handled with the
+                        utmost care and professionalism.
+                    </p>
+                </div>
+            </section>
+            <!-- Concierge Services Grid -->
+            <section class="pb-24 px-6 bg-background-light dark:bg-background-dark">
+                <div class="max-w-7xl mx-auto">
+                    <div
+                        class="flex flex-col md:flex-row items-end justify-between mb-12 border-b border-gray-200 dark:border-gray-800 pb-6">
+                        <div>
+                            <h3 class="text-secondary dark:text-white text-2xl font-bold tracking-tight">Concierge
+                                Services</h3>
+                            <p class="text-gray-500 mt-2">Comprehensive support tailored for our international
+                                clientele.</p>
+                        </div>
+                        <a class="hidden md:flex items-center text-primary font-semibold hover:underline mt-4 md:mt-0"
+                            href="#">
+                            Download Patient Guide <span
+                                class="material-symbols-outlined ml-1 text-sm">arrow_outward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Card 1 -->
+                        <div
+                            class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">badge</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">Visa Assistance</h4>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                Our legal team provides full support with medical visa applications, invitation letters,
+                                and documentation to ensure smooth entry into the country.
+                            </p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">airport_shuttle</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">VIP Transport</h4>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                Enjoy complimentary private chauffeur service from the airport directly to your partner
+                                hotel or our clinic. Comfort begins the moment you land.
+                            </p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="group bg-surface-light dark:bg-surface-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined text-3xl">translate</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-secondary dark:text-white mb-3">Language Support</h4>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                Communication is key to comfort. Our staff includes native speakers of English, French,
+                                German, and Arabic. Dedicated translators are available upon request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial Carousel -->
+            <section class="py-20 bg-white dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+                <div class="max-w-7xl mx-auto px-6">
+                    <h2 class="text-2xl font-bold text-secondary dark:text-white mb-10 text-center">Patient Stories from
+                        Around the Globe</h2>
+                    <div class="flex overflow-x-auto gap-6 pb-8 scrollbar-hide snap-x">
+                        <!-- Review 1 -->
+                        <div
+                            class="min-w-[320px] md:min-w-[400px] snap-center bg-background-light dark:bg-background-dark p-6 rounded-xl border border-gray-100 dark:border-gray-700 flex flex-col h-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-cover bg-center"
+                                    data-alt="Portrait of Sarah J from UK"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARs-_ktPVYUT3SyrAFLpEdQ_e2kqKTgo1NaZN6RFF6tV7V3HociBcIKIIxfiEbRMv-79AE39atawFyW9nJsFp6XD4hn9QFEerv2J5kNq-e6oYxK2d65_cJF-VRLBS7p0XZqlsVnCHiphIfdNgEK5_OABmmhkFepPMa6J44okKJvZUdytH_Sf59d9F5VKqUePeih0oNPQwCLEyEmg1-1GwnmJKm5ekgVwJmpGfmyhB4h7yt5I8drjKDqtYTOPJjjmCsBE8kqReciry9");'>
+                                </div>
+                                <div>
+                                    <p class="text-secondary dark:text-white font-bold">Sarah J.</p>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">London, United Kingdom</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-3 text-amber-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic flex-grow">"The team handled everything
+                                from my hotel booking to the procedure. It felt less like a medical trip and more like a
+                                spa visit. Truly world-class service."</p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div
+                            class="min-w-[320px] md:min-w-[400px] snap-center bg-background-light dark:bg-background-dark p-6 rounded-xl border border-gray-100 dark:border-gray-700 flex flex-col h-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-cover bg-center"
+                                    data-alt="Portrait of Marc D from France"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlWDeJd_VDB7D9yneoI4ARo-jeBPJhs5QOTLtIzqdt0-K9qmKBWRj_pzXub8TAmSlyOXFqwSCc1xIxnZn7N-hsp76bGTK5XR1Ud4wrmwHZL9d-wo68d3WkajJ_SWPf01cUk-Tfb53bM_qTlLWZCvJ4wF782Y-DrdKflOLEU2TJ3KHFU4DtE1540EbTu7gEs-mWAT3zVj82neOh44YBYs52IJJyGhKjcmbLRp3HZ8srjd5eY9VOVtyK9OXPjd9080Tmk3DDDF6Kxg1U");'>
+                                </div>
+                                <div>
+                                    <p class="text-secondary dark:text-white font-bold">Marc D.</p>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-3 text-amber-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic flex-grow">"Efficiency and luxury
+                                combined. The airport pickup was a lovely touch that took away all the stress of
+                                arriving in a new city."</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div
+                            class="min-w-[320px] md:min-w-[400px] snap-center bg-background-light dark:bg-background-dark p-6 rounded-xl border border-gray-100 dark:border-gray-700 flex flex-col h-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-cover bg-center"
+                                    data-alt="Portrait of Elena R from USA"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkBVkl4shITeCqln0on43WJdz-kOXTjzLbxanUaV0_J3-IhKUHD2_FGTlHjKcsE8AaFXlrYtelIWSiOQhW-gLrdn0Mbiza6YmAxHLW88saXv0tQfi5zne-3D-Co2vkMxRz02vnztl64FMLw-UZV1Slp9QJ7tZ-UEXoSYgoetVHn4dl1OvJ3VBwCaKDIeZvD1qB1r8JVmIr-wRETrdUXrhTk1FayDssLayN8ufeqBqquoSKodycj8JA8dGiQcKiN150Qo1O15mMJfHJ");'>
+                                </div>
+                                <div>
+                                    <p class="text-secondary dark:text-white font-bold">Elena R.</p>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">New York, USA</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-3 text-amber-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic flex-grow">"Traveling alone for dental
+                                work was daunting, but the LuxDental team made me feel completely at ease. Highly
+                                recommended."</p>
+                        </div>
+                        <!-- Review 4 -->
+                        <div
+                            class="min-w-[320px] md:min-w-[400px] snap-center bg-background-light dark:bg-background-dark p-6 rounded-xl border border-gray-100 dark:border-gray-700 flex flex-col h-full">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 rounded-full bg-cover bg-center"
+                                    data-alt="Portrait of Hiroshi T from Japan"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbTZHIhDOxbW8XQOKUfTbQVM9A6BLz3WVY9g-E1sl9fhhVMIQBeSzvLQqbti1Q4UAeaEVFN47gVbY5zTj3ZrcSu9bnqAlqzBVjyAJ0Tf4yJxrUVMtvglOIxC51vjyE_KVLQMVqZBvxZPA17hoYnDBu4tkPAn-6TV3VG9vHgGdsIouyKZ_owTZDFtJfrJuPH78QxM35CJZ7cehdhj32NXwbexrmGtyJS6HQDeGle2hEw-z1SCY8kCZzQVtprMcv6fF7DT1eqHOSqyVS");'>
+                                </div>
+                                <div>
+                                    <p class="text-secondary dark:text-white font-bold">Hiroshi T.</p>
+                                    <p class="text-xs text-gray-500 uppercase tracking-wide">Tokyo, Japan</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-3 text-amber-400 text-sm">
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                                <span class="material-symbols-outlined fill-current">star</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-300 italic flex-grow">"The attention to detail is
+                                unmatched. From the translation services to the clinic facilities, everything was
+                                perfect."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Location & Map Section -->
+            <section class="py-24 px-6 bg-background-light dark:bg-background-dark">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-3xl font-bold text-secondary dark:text-white mb-4">Prime Location</h2>
+                            <p class="text-gray-600 dark:text-gray-400 text-lg">
+                                Located in the heart of the city's diplomatic district, our clinic is just 20 minutes
+                                from the international airport and walking distance from 5-star partner hotels.
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">pin_drop</span>
+                                <div>
+                                    <h4 class="font-bold text-secondary dark:text-white">Zurich Diplomatic District</h4>
+                                    <p class="text-sm text-gray-500">Bahnhofstrasse 12, 8001 Zürich</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">flight</span>
+                                <div>
+                                    <h4 class="font-bold text-secondary dark:text-white">Airport Proximity</h4>
+                                    <p class="text-sm text-gray-500">20 mins drive via private transfer</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary mt-1">hotel</span>
+                                <div>
+                                    <h4 class="font-bold text-secondary dark:text-white">Luxury Accommodations</h4>
+                                    <p class="text-sm text-gray-500">Partner rates at The Dolder Grand &amp; Baur au Lac
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+                            View on Google Maps <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div class="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- Simulated Map Image -->
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            data-alt="Stylized map showing Zurich city center location" data-location="Zurich"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqQtM1-IkwkUiqQmdBTgBwpu1D1X1p6a1-Z4L8PGE58sx5LtaPaI3a9On5omq9drL6RywUaiwByIw0ryHodFrxnM48KgQQyl0OU3d4GrlmREMNYAMpihkbCpr_UtgLJl68_ZmH_E8nXu9EpftKO9y0a0DwnrBZv7MN7Uw5FQfgLjFjbQ3tb8YPI70KUFLVXZ3q_JlQwJOfCkbvvCTjrA4_qhlYQu_2I5dEzp3bZGg7NNh-TE5IePn5nQ_z2B3Whd7Vx2r4NnGdz686");'>
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+                            <!-- Map Pin Overlay -->
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                <div class="bg-primary text-white p-3 rounded-full shadow-lg animate-bounce">
+                                    <span class="material-symbols-outlined block">dentistry</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ Accordion -->
+            <section class="py-20 bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800">
+                <div class="max-w-3xl mx-auto px-6">
+                    <h2 class="text-2xl font-bold text-secondary dark:text-white text-center mb-12">Logistics &amp;
+                        Planning FAQ</h2>
+                    <div class="space-y-4">
+                        <details
+                            class="group bg-background-light dark:bg-background-dark rounded-lg p-4 open:bg-white dark:open:bg-gray-800 open:shadow-md transition-all">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-secondary dark:text-white">
+                                <span>How long should I plan to stay?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                                Most major treatments require a stay of 3-5 days. For full mouth restorations or
+                                implants, two visits separated by a healing period might be necessary. We will provide a
+                                detailed timeline during your initial consultation.
+                            </div>
+                        </details>
+                        <details
+                            class="group bg-background-light dark:bg-background-dark rounded-lg p-4 open:bg-white dark:open:bg-gray-800 open:shadow-md transition-all">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-secondary dark:text-white">
+                                <span>Do you accept international insurance?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                                We work with many major international insurance providers. Our administrative team will
+                                assist you in verifying coverage and preparing all necessary claim forms for
+                                reimbursement.
+                            </div>
+                        </details>
+                        <details
+                            class="group bg-background-light dark:bg-background-dark rounded-lg p-4 open:bg-white dark:open:bg-gray-800 open:shadow-md transition-all">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-secondary dark:text-white">
+                                <span>Can I bring a companion?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                                Absolutely. We can arrange accommodation and transport for your companion as well. Our
+                                concierge can also suggest local activities for them while you are undergoing treatment.
+                            </div>
+                        </details>
+                        <details
+                            class="group bg-background-light dark:bg-background-dark rounded-lg p-4 open:bg-white dark:open:bg-gray-800 open:shadow-md transition-all">
+                            <summary
+                                class="flex justify-between items-center font-medium cursor-pointer list-none text-secondary dark:text-white">
+                                <span>Is financing available for international patients?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </span>
+                            </summary>
+                            <div class="text-gray-600 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                                We offer various payment plans and financing options through our banking partners.
+                                Please contact our financial coordinator for specific details relevant to your country
+                                of residence.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="py-24 px-6 bg-primary text-white text-center">
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Ready to Transform Your Smile?</h2>
+                    <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+                        Begin your journey with a complimentary virtual consultation. Our specialists are ready to
+                        discuss your needs and create a personalized treatment plan.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                        <button
+                            class="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg shadow-lg transition-colors">
+                            Book Virtual Consultation
+                        </button>
+                        <button
+                            class="bg-transparent border border-white text-white hover:bg-white/10 font-semibold py-4 px-8 rounded-lg transition-colors">
+                            Contact International Desk
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-secondary text-white py-16 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="size-6">
+                            <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">LuxDental</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Swiss precision. Global care. Redefining the dental experience for the international community.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a class="hover:text-white transition-colors" href="#">Treatments</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Our Specialists</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Patient Stories</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Pricing Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">International Desk</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">call</span>
+                            +41 44 123 45 67
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            international@luxdental.com
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                            WhatsApp Support
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Accreditations</h4>
+                    <div class="flex gap-4 opacity-70">
+                        <!-- Placeholder logos using pure CSS/HTML text for demo -->
+                        <div class="border border-white/30 px-2 py-1 text-xs rounded">ISO 9001</div>
+                        <div class="border border-white/30 px-2 py-1 text-xs rounded">JCI Accredited</div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4">© 2024 LuxDental Clinic. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lumina Dental - Why Choose Us</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "accent-gold": "#C5A059",
+                        "background-light": "#F9F9F7",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        /* Custom scrollbar for luxury feel if needed, keeping it standard for now */
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111317] dark:text-white transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Top Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-[#e5e7eb] dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md">
+            <div class="px-4 md:px-10 py-4 flex items-center justify-between max-w-[1440px] mx-auto w-full">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary dark:text-blue-400">
+                        <span class="material-symbols-outlined text-3xl">dentistry</span>
+                    </div>
+                    <h2 class="text-[#111317] dark:text-white text-xl font-bold tracking-tight">Lumina Dental</h2>
+                </div>
+                <div class="hidden lg:flex items-center gap-8">
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                        href="#">Treatments</a>
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                        href="#">Specialists</a>
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                        href="#">International Patients</a>
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                        href="#">Gallery</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden sm:flex h-10 px-6 items-center justify-center rounded-lg bg-primary hover:bg-blue-800 text-white text-sm font-bold transition-all shadow-sm">
+                        Book Consultation
+                    </button>
+                    <!-- Mobile Menu Icon -->
+                    <button class="lg:hidden text-[#111317] dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow flex flex-col items-center">
+            <!-- Page Heading Section -->
+            <section class="w-full max-w-[1200px] px-6 py-16 md:py-24 flex flex-col items-center text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 dark:bg-white/5 border border-primary/10 dark:border-white/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-accent-gold"></span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-primary dark:text-blue-300">Swiss
+                        Standards</span>
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#111317] dark:text-white max-w-4xl mb-6">
+                    The Gold Standard in <br class="hidden md:block" /> Dental Care
+                </h1>
+                <p class="text-lg md:text-xl text-[#646f87] dark:text-gray-400 max-w-2xl font-light leading-relaxed">
+                    Experience excellence without compromise. We combine luxury hospitality with world-class medical
+                    precision for our international clientele.
+                </p>
+            </section>
+            <!-- Feature Section with Visuals -->
+            <section class="w-full max-w-[1200px] px-6 pb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                    <!-- Left: Sticky Visual -->
+                    <div class="lg:col-span-5 lg:sticky lg:top-32 flex flex-col gap-6">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[4/5] shadow-2xl">
+                            <img alt="Modern luxury dental clinic waiting area with warm lighting and comfortable beige armchairs"
+                                class="object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-out"
+                                data-alt="Modern luxury dental clinic waiting area with warm lighting and comfortable beige armchairs"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8wUgAjji4ToupVeuzX8FqYKsJnuyo7D6l7mTrhgcvI411GNPumfCJAbJlRWOHoZ1AoQRg8fukWqJtQ90aAYPRZnZyAyjC8ucWxhUTHAFyct35z4g-v1HK6sd0RJWDdXab7DtMdyzoNqNxU0RjiguMhj831qyl3ZAF7L61HF-2B4oy6EkdVTFamEKlfbjWXOPFZr9LFnLcz6sRsBMNH3LiilVVht46k7voja8Mwn9Qb1z7hCGUEVl7JiUVqSXThJu6ApFVb87mBFJ2" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <p class="text-sm font-medium opacity-90 uppercase tracking-wider mb-1">Zurich,
+                                    Switzerland</p>
+                                <p class="text-2xl font-bold">Flagship Clinic</p>
+                            </div>
+                        </div>
+                        <div
+                            class="p-6 bg-white dark:bg-slate-800 rounded-xl border border-[#e5e7eb] dark:border-gray-700 shadow-sm">
+                            <div class="flex items-center gap-4 mb-3">
+                                <div class="p-2 rounded-full bg-primary/10 text-primary dark:text-blue-300">
+                                    <span class="material-symbols-outlined">verified</span>
+                                </div>
+                                <h3 class="font-bold text-lg dark:text-white">Certified Excellence</h3>
+                            </div>
+                            <p class="text-[#646f87] dark:text-gray-400 text-sm leading-relaxed">
+                                Accredited by the International Joint Commission for medical quality and patient safety.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Right: Features Grid -->
+                    <div class="lg:col-span-7 flex flex-col gap-10">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-3xl font-bold text-[#111317] dark:text-white">Why Global Patients Choose Us
+                            </h2>
+                            <p class="text-[#646f87] dark:text-gray-400">A curated experience tailored for your comfort,
+                                safety, and time.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Feature 1 -->
+                            <div
+                                class="group p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e5e7eb] dark:border-gray-700 hover:border-accent-gold/50 dark:hover:border-accent-gold/50 transition-all duration-300 hover:shadow-lg">
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-[#F9F9F7] dark:bg-slate-700 flex items-center justify-center mb-4 text-accent-gold group-hover:scale-110 transition-transform duration-300">
+                                    <span class="material-symbols-outlined text-3xl">spa</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#111317] dark:text-white mb-2">Luxury Environment
+                                </h3>
+                                <p class="text-[#646f87] dark:text-gray-400 text-sm leading-relaxed">
+                                    A serene, spa-like atmosphere designed to alleviate anxiety. Enjoy private recovery
+                                    suites and noise-canceling amenities.
+                                </p>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div
+                                class="group p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e5e7eb] dark:border-gray-700 hover:border-accent-gold/50 dark:hover:border-accent-gold/50 transition-all duration-300 hover:shadow-lg">
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-[#F9F9F7] dark:bg-slate-700 flex items-center justify-center mb-4 text-accent-gold group-hover:scale-110 transition-transform duration-300">
+                                    <span class="material-symbols-outlined text-3xl">clean_hands</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#111317] dark:text-white mb-2">International
+                                    Sterilization</h3>
+                                <p class="text-[#646f87] dark:text-gray-400 text-sm leading-relaxed">
+                                    Exceeding international hygiene protocols with hospital-grade sterilization cycles
+                                    to ensure your absolute safety.
+                                </p>
+                            </div>
+                            <!-- Feature 3 -->
+                            <div
+                                class="group p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e5e7eb] dark:border-gray-700 hover:border-accent-gold/50 dark:hover:border-accent-gold/50 transition-all duration-300 hover:shadow-lg">
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-[#F9F9F7] dark:bg-slate-700 flex items-center justify-center mb-4 text-accent-gold group-hover:scale-110 transition-transform duration-300">
+                                    <span class="material-symbols-outlined text-3xl">view_in_ar</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#111317] dark:text-white mb-2">Advanced Technology
+                                </h3>
+                                <p class="text-[#646f87] dark:text-gray-400 text-sm leading-relaxed">
+                                    State-of-the-art digital imaging, AI diagnostics, and 3D precision printing for
+                                    minimally invasive treatments.
+                                </p>
+                            </div>
+                            <!-- Feature 4 -->
+                            <div
+                                class="group p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e5e7eb] dark:border-gray-700 hover:border-accent-gold/50 dark:hover:border-accent-gold/50 transition-all duration-300 hover:shadow-lg">
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-[#F9F9F7] dark:bg-slate-700 flex items-center justify-center mb-4 text-accent-gold group-hover:scale-110 transition-transform duration-300">
+                                    <span class="material-symbols-outlined text-3xl">fingerprint</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-[#111317] dark:text-white mb-2">Personalized Treatment
+                                </h3>
+                                <p class="text-[#646f87] dark:text-gray-400 text-sm leading-relaxed">
+                                    Bespoke treatment plans that respect your unique anatomy and aesthetic goals. We
+                                    don't do "one smile fits all."
+                                </p>
+                            </div>
+                            <!-- Feature 5 (Spanning full width on mobile/tablet, single on desktop grid) -->
+                            <div
+                                class="group md:col-span-2 p-6 rounded-xl bg-primary text-white border border-primary hover:bg-blue-900 transition-all duration-300 hover:shadow-lg">
+                                <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+                                    <div
+                                        class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 shrink-0">
+                                        <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-bold mb-2">Foreign Patient Assistance</h3>
+                                        <p class="text-white/80 text-sm leading-relaxed max-w-lg">
+                                            Dedicated concierge support for travel, luxury accommodation, and language
+                                            interpretation. We handle the logistics so you can focus on your smile.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="w-full bg-white dark:bg-slate-900 py-16 border-t border-[#e5e7eb] dark:border-gray-800">
+                <div class="max-w-[960px] mx-auto px-6 text-center flex flex-col items-center gap-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#111317] dark:text-white">Ready for your
+                        transformation?</h2>
+                    <p class="text-[#646f87] dark:text-gray-400 max-w-lg">Book a virtual consultation with our lead
+                        specialists to discuss your needs before you fly.</p>
+                    <button
+                        class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-blue-800 text-white text-base font-bold tracking-wide transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                        <span class="truncate">Book Your Consultation</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-background-dark border-t border-[#f0f2f4] dark:border-gray-800">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-12 md:py-16">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="material-symbols-outlined text-3xl text-primary dark:text-blue-400">dentistry</span>
+                        <span class="text-xl font-bold text-[#111317] dark:text-white">Lumina Dental</span>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 text-sm font-medium transition-colors"
+                            href="#">Privacy Policy</a>
+                        <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 text-sm font-medium transition-colors"
+                            href="#">Terms of Service</a>
+                        <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 text-sm font-medium transition-colors"
+                            href="#">Patient Portal</a>
+                    </div>
+                </div>
+                <div class="h-px w-full bg-[#f0f2f4] dark:bg-gray-800 mb-10"></div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-[#646f87] dark:text-gray-500 text-sm">© 2024 Lumina Dental Clinic. All rights
+                        reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="text-[#646f87] dark:text-gray-500 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                            href="#">
+                            <span class="sr-only">Instagram</span>
+                            <!-- Used a generic social icon from Material Symbols for simplicity as exact brand logos aren't in standard Material Icons set, usually these would be SVG paths -->
+                            <span class="material-symbols-outlined">photo_camera</span>
+                        </a>
+                        <a class="text-[#646f87] dark:text-gray-500 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                            href="#">
+                            <span class="sr-only">LinkedIn</span>
+                            <span class="material-symbols-outlined">work</span>
+                        </a>
+                        <a class="text-[#646f87] dark:text-gray-500 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                            href="#">
+                            <span class="sr-only">Facebook</span>
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Swiss Dental - Patient Testimonials</title>
+    <!-- Google Fonts: Manrope -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#FAFAF9", /* Ivory/Off-white tint */
+                        "background-dark": "#111621",
+                        "gold-accent": "#C5A059",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 10px 40px -10px rgba(0,0,0,0.05)"
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for horizontal scrolling sections */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#111317] dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary/20 selection:text-primary">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <!-- Top Navigation -->
+        <header
+            class="sticky top-0 z-50 w-full bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#E5E7EB] dark:border-[#2A3140]">
+            <div class="layout-container flex h-full grow flex-col">
+                <div class="px-6 md:px-12 lg:px-40 flex flex-1 justify-center py-4">
+                    <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                        <div class="flex items-center justify-between whitespace-nowrap">
+                            <div class="flex items-center gap-4 text-primary dark:text-white">
+                                <div class="size-8 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[32px]">dentistry</span>
+                                </div>
+                                <h2
+                                    class="text-[#111317] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                    Swiss Dental</h2>
+                            </div>
+                            <div class="hidden md:flex flex-1 justify-end gap-10 items-center">
+                                <nav class="flex items-center gap-8">
+                                    <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                        href="#">Treatments</a>
+                                    <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                        href="#">Specialists</a>
+                                    <a class="text-[#111317] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                                        href="#">Experience</a>
+                                </nav>
+                                <button
+                                    class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                                    <span class="truncate">Book Consultation</span>
+                                </button>
+                            </div>
+                            <!-- Mobile Menu Icon -->
+                            <div class="md:hidden flex items-center">
+                                <span
+                                    class="material-symbols-outlined text-[#111317] dark:text-white cursor-pointer">menu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hero / Intro Section -->
+        <section class="w-full py-16 md:py-24 bg-background-light dark:bg-background-dark">
+            <div class="layout-container flex flex-col items-center justify-center px-6 md:px-12 lg:px-40">
+                <div class="max-w-[800px] text-center flex flex-col gap-6">
+                    <div class="flex items-center justify-center gap-2">
+                        <span class="h-px w-8 bg-gold-accent"></span>
+                        <h4 class="text-gold-accent text-xs font-bold uppercase tracking-[0.15em]">Excellence Across
+                            Borders</h4>
+                        <span class="h-px w-8 bg-gold-accent"></span>
+                    </div>
+                    <h1
+                        class="text-[#111317] dark:text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.15] tracking-tight">
+                        Stories of <span class="italic font-serif text-primary font-medium">precision</span> and renewed
+                        confidence.
+                    </h1>
+                    <p
+                        class="text-[#646f87] dark:text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-[600px] mx-auto">
+                        Join thousands of international patients who have discovered the art of Swiss dental
+                        craftsmanship in a serene, luxury setting.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Carousel Section -->
+        <section class="w-full pb-20 pt-8 bg-background-light dark:bg-background-dark overflow-hidden">
+            <div class="layout-container px-4 md:px-12 lg:px-40 flex flex-col gap-12 max-w-[1400px] mx-auto">
+                <!-- Cards Container -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="flex flex-col h-full bg-white dark:bg-[#1E2330] p-8 rounded-2xl shadow-soft border border-slate-100 dark:border-slate-800 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="mb-6 flex justify-between items-start">
+                            <div class="flex gap-1 text-gold-accent">
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-4xl text-primary/10 rotate-180">format_quote</span>
+                        </div>
+                        <p
+                            class="text-[#111317] dark:text-gray-200 text-base md:text-lg font-normal leading-relaxed flex-grow">
+                            "The veneer procedure was flawless. I flew in from London and the efficiency was incredible.
+                            The clinic feels more like a spa than a medical facility."
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700 flex items-center gap-4">
+                            <div class="bg-center bg-no-repeat bg-cover rounded-full size-12 shadow-inner"
+                                data-alt="Portrait of Sarah J., a happy patient"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3XaUlsFmogpb1pRvfileCJ-sdZxfniOnh8A3oQpPke37JSgDkUgKiuTKLq6KpaIA8esBii6F9VJD5VT2uo8TpYp4U4iVOp0S3ppVYUlMKoKT-ahSr_S_ugvOmQILggLmD_9FbIde5O3wcSusljmkOfRj2errlBP-otGFIW-YceLiztB87hVWZFF_IweO1JG1xPqtLaoyhO898Jek07ngTHDZP4Oer8sp286jZLHr5ZuBnlIQjdn4gQAiM7c69sw_zOr6J2LF0iJhF");'>
+                            </div>
+                            <div>
+                                <h5 class="text-[#111317] dark:text-white font-bold text-sm">Sarah J.</h5>
+                                <p class="text-[#646f87] dark:text-gray-400 text-xs font-medium">London, UK • Veneers
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 (Featured/Central) -->
+                    <div
+                        class="flex flex-col h-full bg-white dark:bg-[#1E2330] p-8 rounded-2xl shadow-[0_20px_60px_-15px_rgba(25,76,179,0.15)] border border-primary/10 dark:border-primary/20 relative md:-mt-4 md:mb-4 z-10">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
+                            <span class="material-symbols-outlined text-8xl text-primary">format_quote</span>
+                        </div>
+                        <div class="mb-6 flex justify-between items-start z-10">
+                            <div class="flex gap-1 text-gold-accent">
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                            </div>
+                        </div>
+                        <p
+                            class="text-[#111317] dark:text-white text-lg md:text-xl font-medium leading-relaxed flex-grow z-10">
+                            "Exceptional attention to detail. The team made my full mouth rehabilitation seamless. Truly
+                            world-class care in a stunning setting."
+                        </p>
+                        <div
+                            class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700 flex items-center gap-4 z-10">
+                            <div class="bg-center bg-no-repeat bg-cover rounded-full size-12 shadow-inner"
+                                data-alt="Portrait of Michael D., smiling confidently"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPYfd8NTclt8T664UnRiqzOdM-4HhYcDGREHl5pFyn7Rq5I4fcVpxtggoza6x1aJ7VIJll7hx0aoXjg35FsJ8JscOGrx2488assHx6D28MPtQMuU-5atRoykwM9osMVzxBOttcjccbgJRvANVxiZTF72imJdLRB3gNCYkCkoNQTe5gF4gbDerQoN4SdpNjxGXWU5d2KT8T1aWmxLLMUDMiXu3eGf4TFILDmbRoUMLI1_Tb43Tyt3LLLUcBwgYBv1KA28iHnDlp1JNJ");'>
+                            </div>
+                            <div>
+                                <h5 class="text-[#111317] dark:text-white font-bold text-sm">Michael D.</h5>
+                                <p class="text-[#646f87] dark:text-gray-400 text-xs font-medium">New York, USA • Full
+                                    Rehabilitation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="flex flex-col h-full bg-white dark:bg-[#1E2330] p-8 rounded-2xl shadow-soft border border-slate-100 dark:border-slate-800 transition-transform hover:-translate-y-1 duration-300">
+                        <div class="mb-6 flex justify-between items-start">
+                            <div class="flex gap-1 text-gold-accent">
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                                <span class="material-symbols-outlined text-[20px]">star</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-4xl text-primary/10 rotate-180">format_quote</span>
+                        </div>
+                        <p
+                            class="text-[#111317] dark:text-gray-200 text-base md:text-lg font-normal leading-relaxed flex-grow">
+                            "Precision and care at its finest. I felt completely at ease throughout my implant
+                            procedure. The results speak for themselves."
+                        </p>
+                        <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700 flex items-center gap-4">
+                            <div class="bg-center bg-no-repeat bg-cover rounded-full size-12 shadow-inner"
+                                data-alt="Portrait of Elena R., smiling"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcO0K4m2Zp37FIwrBSoRqhey-0hohDr1hfgiyUReMsgM4uWzzDb9SgFTkPnArwsC13E-BvPBoPdlwdPY-f7uD4s86sLIHNGD83dbLMh_grBKXfyEBztiRjsdVTeCazVn1ELxRHYTRBQhQZF9YmHpMaFxY-aqbDIKbVp3d14BY2T-Z7-mU7Y8ijWZRs0y4BaScl5eKRkDCxw6JJDyDHre0dZdSJ4pgdiIJsbQ3cBv5UHyj_o1ecmkcPWcklf29l2J2CmmXSqrrBoIid");'>
+                            </div>
+                            <div>
+                                <h5 class="text-[#111317] dark:text-white font-bold text-sm">Elena R.</h5>
+                                <p class="text-[#646f87] dark:text-gray-400 text-xs font-medium">Zurich, CH • Implants
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Controls & Indicators -->
+                <div class="flex flex-col items-center gap-6 mt-4">
+                    <div class="flex items-center gap-2">
+                        <button class="size-2 rounded-full bg-gray-300 hover:bg-primary transition-colors"></button>
+                        <button class="size-2 rounded-full bg-primary w-8 transition-all"></button>
+                        <button class="size-2 rounded-full bg-gray-300 hover:bg-primary transition-colors"></button>
+                        <button class="size-2 rounded-full bg-gray-300 hover:bg-primary transition-colors"></button>
+                    </div>
+                </div>
+                <!-- Trust Indicators -->
+                <div
+                    class="flex flex-wrap justify-center gap-8 md:gap-16 pt-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">verified_user</span>
+                        <span class="text-sm font-bold uppercase tracking-wider">Swiss Certified</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">star_rate</span>
+                        <span class="text-sm font-bold uppercase tracking-wider">4.9/5 on Google</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-3xl">medical_services</span>
+                        <span class="text-sm font-bold uppercase tracking-wider">Top 10 Clinics EU</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Visual Context Section -->
+        <section
+            class="w-full py-12 md:py-20 bg-white dark:bg-background-dark border-t border-slate-50 dark:border-slate-800">
+            <div class="layout-container px-6 md:px-12 lg:px-40 flex flex-col items-center">
+                <div class="layout-content-container flex flex-col max-w-[960px] w-full gap-8">
+                    <div class="text-center space-y-2 mb-4">
+                        <h3 class="text-2xl md:text-3xl font-light text-[#111317] dark:text-white">A Sanctuary for Your
+                            Smile</h3>
+                        <p class="text-[#646f87] dark:text-gray-400">Experience world-class technology in a calming
+                            environment.</p>
+                    </div>
+                    <div
+                        class="w-full overflow-hidden bg-white dark:bg-background-dark rounded-2xl grid grid-cols-1 md:grid-cols-3 gap-4 h-[400px] md:h-[500px]">
+                        <!-- Main Image -->
+                        <div class="w-full h-full bg-center bg-no-repeat bg-cover md:col-span-2 relative group overflow-hidden rounded-xl"
+                            data-alt="Modern, bright dental clinic interior with comfortable chair and window view"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgaVYh8dFfKBWRqszeOWN-RXE13ihr9mvONtlo78vXNYUnzK3fa_smW7SbW1F5Inv7Zyjy2mAFjnXsxdNHkSnJ15WhhzZB1qFH2_5ipY0oRWzVgmyihzVQBXkE6eJ3DM21_kcckchKuqmvIzOcxvMtTuId0u892d3T1qOoAI2L1lu28de5keFq2v9xMU7USm5rvKmNPiD-RV803CmYPKTOnQ9Khds0YkiYUsbRDDgYFnlPGLx2fxp-gB05fLN3My1EBk3UZXBFHJ7W");'>
+                            <div
+                                class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-700">
+                            </div>
+                        </div>
+                        <!-- Side Images Stack -->
+                        <div class="hidden md:flex flex-col gap-4 h-full">
+                            <div class="w-full h-1/2 bg-center bg-no-repeat bg-cover rounded-xl"
+                                data-alt="Close up of advanced dental tools on a sterile tray"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCu0GVvsfifJuHrC2kamphJH5aLHa38qBgQNe1YPFykZyDD-jRR9Baw2K55MdblpVKjOOzGzkuusfnupR6LwFV6eNBMAzlSPt7osEjRlK0MY2g19WCevo7xthNZKhI0ev7Tal0jfpfdcI-WpkjY3aerHR5FabIu5pbPrqMbMRezOLFzNUozRjCoEyBEPA_AmnwSL4AMriuFRilpE4ovPFWJbCVKKg8wV5zGWaPlnETsO4JYSoCDIrIpWpIPnv3m-GPCfgNsn6hJw-AF");'>
+                            </div>
+                            <div class="w-full h-1/2 bg-center bg-no-repeat bg-cover rounded-xl"
+                                data-alt="Abstract blurry view of a bright and clean medical corridor"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBwKZUMjhWoZcIoeXDIub6XweYREnTMNjmqe9gpPgkyFcNXAPklbGa8J9cPyOwuKSgQ4BOVhLytnajcjZw_lxanojlXEOGUtT2v37vq5TEZHCI2IH9LuRqZKMRuAre9qDCJ_r_-UolsQxWcDt4YQU6DpgeYXUWb7wYjApinX_SMNGK739KN_2-NnFNRVADWrWbt6ZbthECezplHI2w-HPWyHf0zvAbka3HAtDBaKblicsuTJSq3DGAzsilu9zqsN_hju3KLvSOjwqD");'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="w-full py-20 bg-primary/5 dark:bg-primary/10">
+            <div class="layout-container flex flex-col items-center justify-center px-6">
+                <div class="max-w-[700px] text-center flex flex-col gap-8">
+                    <h2 class="text-3xl md:text-4xl font-light text-[#111317] dark:text-white leading-tight">
+                        Ready to begin your transformation?
+                    </h2>
+                    <p class="text-[#646f87] dark:text-gray-300 text-lg">
+                        Schedule a virtual consultation with our specialists today and receive a personalized treatment
+                        plan from the comfort of your home.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                        <button
+                            class="flex items-center justify-center rounded-full h-12 px-8 bg-primary text-white text-base font-bold tracking-[0.015em] hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                            Book Virtual Consultation
+                        </button>
+                        <button
+                            class="flex items-center justify-center rounded-full h-12 px-8 bg-white dark:bg-transparent border border-gray-200 dark:border-gray-600 text-[#111317] dark:text-white text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+                            View Treatments
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lumière Dental - Clinic Gallery</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth scrolling and clean selection */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::selection {
+            background-color: #194cb3;
+            color: white;
+        }
+
+        /* Hide scrollbar for clean horizontal scroll if needed */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#111317] dark:text-white font-display antialiased selection:bg-primary selection:text-white overflow-x-hidden transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+        <!-- Header -->
+        <header
+            class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f0f2f4] dark:border-white/10 transition-colors duration-300">
+            <div
+                class="layout-container max-w-[1280px] mx-auto px-4 sm:px-8 xl:px-40 h-20 flex items-center justify-between">
+                <!-- Logo Section -->
+                <div class="flex items-center gap-3 text-primary dark:text-white">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <svg class="w-full h-full text-primary" fill="none" viewbox="0 0 48 48"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C12.95 4 4 12.95 4 24C4 35.05 12.95 44 24 44C35.05 44 44 35.05 44 24C44 12.95 35.05 4 24 4ZM24 40C15.16 40 8 32.84 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 32.84 32.84 40 24 40Z"
+                                fill="currentColor" fill-opacity="0.1"></path>
+                            <path d="M24 12L12 36H36L24 12Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-[#111317] dark:text-white">LUMIÈRE DENTAL</span>
+                </div>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">The Clinic</a>
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Expertise</a>
+                    <a class="text-sm font-medium text-primary font-bold dark:text-white" href="#">Gallery</a>
+                    <a class="text-sm font-medium text-[#111317] dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <!-- CTA -->
+                <button
+                    class="hidden md:flex items-center justify-center h-10 px-6 bg-primary hover:bg-primary/90 text-white text-sm font-bold rounded-full transition-all duration-300 shadow-lg shadow-primary/20">
+                    Book Consultation
+                </button>
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden text-[#111317] dark:text-white">
+                    <span class="material-symbols-outlined cursor-pointer">menu</span>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1 w-full max-w-[1280px] mx-auto px-4 sm:px-8 xl:px-40 py-10">
+            <!-- Page Heading -->
+            <div class="flex flex-col gap-6 py-10 max-w-4xl mx-auto text-center md:text-left animate-fade-in-up">
+                <div class="space-y-4">
+                    <h1
+                        class="text-[#111317] dark:text-white text-4xl md:text-6xl font-light leading-tight tracking-tight">
+                        A Sanctuary of <span class="text-primary italic font-medium">Care</span>
+                    </h1>
+                    <p
+                        class="text-[#646f87] dark:text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto md:mx-0">
+                        Experience world-class dental excellence in the heart of Zurich. Designed for comfort,
+                        precision, and tranquility, our spaces reflect the quality of our work.
+                    </p>
+                </div>
+            </div>
+            <!-- Filter Chips -->
+            <div class="flex justify-center md:justify-start pb-12">
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="px-5 py-2 rounded-full bg-primary text-white text-sm font-medium shadow-md shadow-primary/20 transition-all hover:bg-primary/90">
+                        All Spaces
+                    </button>
+                    <button
+                        class="px-5 py-2 rounded-full bg-white dark:bg-white/5 border border-[#f0f2f4] dark:border-white/10 text-[#646f87] dark:text-gray-300 text-sm font-medium hover:bg-[#f0f2f4] dark:hover:bg-white/10 hover:text-[#111317] dark:hover:text-white transition-all">
+                        Treatment Rooms
+                    </button>
+                    <button
+                        class="px-5 py-2 rounded-full bg-white dark:bg-white/5 border border-[#f0f2f4] dark:border-white/10 text-[#646f87] dark:text-gray-300 text-sm font-medium hover:bg-[#f0f2f4] dark:hover:bg-white/10 hover:text-[#111317] dark:hover:text-white transition-all">
+                        Waiting Lounge
+                    </button>
+                    <button
+                        class="px-5 py-2 rounded-full bg-white dark:bg-white/5 border border-[#f0f2f4] dark:border-white/10 text-[#646f87] dark:text-gray-300 text-sm font-medium hover:bg-[#f0f2f4] dark:hover:bg-white/10 hover:text-[#111317] dark:hover:text-white transition-all">
+                        Laboratory
+                    </button>
+                    <button
+                        class="px-5 py-2 rounded-full bg-white dark:bg-white/5 border border-[#f0f2f4] dark:border-white/10 text-[#646f87] dark:text-gray-300 text-sm font-medium hover:bg-[#f0f2f4] dark:hover:bg-white/10 hover:text-[#111317] dark:hover:text-white transition-all">
+                        Technology
+                    </button>
+                </div>
+            </div>
+            <!-- Image Grid (Masonry-ish Feel with Standard Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-12">
+                <!-- Item 1: Large Feature -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer">
+                    <div
+                        class="relative w-full aspect-[4/3] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Modern bright dental waiting area with comfortable seating and warm lighting"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRsnpAdLYCul49gtoYM3_EYoHXKKRplMRMyc-pvl2F9aq85D_D1ivUA7qOQGM1Mr9tcVCxmpJHBaD14ppj8rUEaURXTDdAUkZjib8yTCj13YsMAeBjzaT-FwN-oW3B7tKxcFQq2P839vwJVftqA7HNFn_w2uIVBh31FgtW4nIZnKcDpNyI5GRUPSspF1EWz8Oqw7ttGdcbjIT9xswPYcj4ahBwxdG5V1bvbZpQkLrHEMjhfXFpUafdva6YLFf3C7AUAmpvWi24stWo');">
+                        </div>
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <!-- Icon hint -->
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">Grand Lobby</p>
+                        <span
+                            class="material-symbols-outlined text-[#646f87] text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">The welcoming heart of our clinic.
+                    </p>
+                </div>
+                <!-- Item 2 -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer lg:mt-12">
+                    <div
+                        class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Close up of pristine dental instruments on a sterile tray"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl-IDWRCuN4CrFvbwtbTbgq0C0hIhAji4ZvNgxQzlRwt4E145icVAclIV3NUtHTnM9bXzV39rFtHZqkpdxHnkBSrLkZ1jG8TNgTBQMLLhvsTdUtROVo-aipvp3jpVZYpznY3-GXnwHD5L3w8r7fBQgo1p2LlLFiaM1NeXhjN8qHzw0Z7TC1vfUXcXuoRKbRYbT9UufMWDuHW5bw7GqANFJ5HOpEmoO2sT3ocS1a31LiEEDGzizEJ6gPm1OkVRaoS3Ehx8MGkB16_xt');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">Precision Instruments</p>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">State-of-the-art tools for perfect
+                        results.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer">
+                    <div
+                        class="relative w-full aspect-[4/3] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Modern clean interior architecture with white walls and soft lighting"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1r93uiG6CAR8qzsHNdf1bng2Fk6NrMXllCeVFoQqk_rm-2nCoih5uIKu-5WQ8AWv-l6WGoaIcHEH-3dLCw70StsBNuRU1ED_1CjhCzNkmC1C6-QSC2spENPn8tMOGR0bhqGfOB0OrAHAh8GrJNrOh_r_5fIR9y1oVabb0Mg_PSp9OGxqeZ7xs3rh9g1yyWFWgcJgloS_KKgwTehpNEaKBshTwJ4odBAMSaR9FrZ8lVr25t7VqW6gYoGOk7KQS0ofBQJxUoxKu7fSa');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">Treatment Suite I</p>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">Designed for patient comfort and
+                        privacy.</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer">
+                    <div
+                        class="relative w-full aspect-[4/3] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Advanced medical laboratory equipment in a clean white room"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1C0FJx4k1XM_NM60jx26fo8H_FMsNYhJ0VuQrwk7swpHeoqj2a_Oc0-v5IOojOAdl0Q7LKhHJJdiXThqWBeDSw6PPOJIceTgB0DNaBY6ad47ZH1HcIGKFKisNgjcoSNH0yGzfNhAyqxAHLlDFHvyuyqO0ZWEkc8ISfz5YljQ7C0qi9joRfFquCXwb7SZqqNddo-JjiI7fJzTTYE-BZzpQ2bquD22vFq7O7gXbxHfb0bFKxxWokh6xA0vSK3t3WJW-UW9fblNCHkqt');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">In-House Laboratory</p>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">Rapid diagnostics and custom
+                        fittings.</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer lg:-mt-12">
+                    <div
+                        class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Abstract view of modern minimalist architecture against a blue sky"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_a6EMm07lcFh5sguA3zScSn6as6lhhsDoBo0nuU_VJsc8GaPlMyOvwhHtZbhU9DDd4Puq9A3zXJ6y-ofhzkMbC_eJ97blx6Doil-cPd0ouPeUZ8kqjLQSkS5kcHdSfQTeAlREB3wSsZGMLEhVwqSZ_lDYv2A5qItBqE35yYNhziJuL-d2k02AFbO5DCvDj6adGOAlfnl12ih6v_HTckLftjSkatwUTT5oPzztyR0vDjlZTCafNnjurPEnRsUfdAEjuxweeEOI3Gup');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">Zurich Skyline View</p>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">A calming vista from every suite.
+                    </p>
+                </div>
+                <!-- Item 6 -->
+                <div class="group relative flex flex-col gap-3 cursor-pointer">
+                    <div
+                        class="relative w-full aspect-[4/3] overflow-hidden rounded-xl shadow-sm bg-gray-100 dark:bg-gray-800">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                            data-alt="Peaceful consultation area with soft chairs and minimal decor"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIUtNceJHDtwRFP00IwJlUVlplGzz_BCV6slMljON-Jr1HX_yxRhlLuVtoM1KvXsnG9vxmmVg3S_Tdn04d3vol7Xo30AG_pxKR6xxRUt4MYfpivRMAadH15iShIM9DPB9cJaLkkngETSmrB0Mcs6-PsVK-Y6WDk7OYnLpuqejNTpq8OBtzpUfyDIm9l8j4WqELvxQFkdRiYMohi3Z37rrFw1625uFhlKlZyLZeErvdwoj6hlVfv-P21_3iXXU0D8ANABz4QM7xSLTL');">
+                        </div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500">
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-4 bg-white/90 dark:bg-black/60 p-2 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            <span
+                                class="material-symbols-outlined text-primary dark:text-white text-xl">open_in_full</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-1">
+                        <p class="text-[#111317] dark:text-white text-lg font-medium">Consultation Lounge</p>
+                    </div>
+                    <p class="text-[#646f87] dark:text-gray-400 text-sm font-light">Where your journey to a perfect
+                        smile begins.</p>
+                </div>
+            </div>
+            <!-- "More" Indicator -->
+            <div class="flex justify-center mt-8">
+                <button
+                    class="flex items-center gap-2 text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium tracking-wide">
+                    VIEW ALL GALLERIES <span class="material-symbols-outlined text-lg">arrow_downward</span>
+                </button>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full bg-[#f6f6f8] dark:bg-[#1a202c] border-t border-[#f0f2f4] dark:border-white/5 py-16">
+            <div class="layout-container max-w-[1280px] mx-auto px-4 sm:px-8 xl:px-40 flex flex-col items-center gap-8">
+                <!-- Social & Legal Links -->
+                <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                    <a class="text-[#646f87] dark:text-gray-400 text-sm hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">Privacy Policy</a>
+                    <a class="text-[#646f87] dark:text-gray-400 text-sm hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">Imprint</a>
+                    <a class="text-[#646f87] dark:text-gray-400 text-sm hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">Terms of Service</a>
+                </div>
+                <!-- Icons -->
+                <div class="flex gap-6">
+                    <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span>
+                    </a>
+                    <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined">share</span>
+                    </a>
+                    <a class="text-[#646f87] dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                        href="#">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+                <!-- Copyright -->
+                <p class="text-[#646f87]/60 dark:text-gray-500 text-sm font-light">
+                    © 2024 Lumière Dental Zurich. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Zurich Dental - Appointment Request</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "gold-accent": "#d4af37",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for the right panel */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #e2e4e7;
+            border-radius: 20px;
+        }
+
+        /* Smooth fade for inputs */
+        .form-input {
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #194cb3;
+            box-shadow: 0 0 0 4px rgba(25, 76, 179, 0.1);
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-[#111317] dark:text-white h-screen overflow-hidden selection:bg-primary/20">
+    <div class="flex h-full w-full">
+        <!-- Left Panel: Brand Imagery (Hidden on Mobile) -->
+        <div class="hidden lg:block lg:w-5/12 xl:w-1/2 h-full relative overflow-hidden bg-background-dark">
+            <div class="absolute inset-0 bg-cover bg-center opacity-80"
+                data-alt="Modern minimalist architectural interior with white curves and soft lighting"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqbg97zDmuoNuNFhSXOOqbvwUv14_aM9QftQue60R5kF9os2z-dB1-5LeNGvDUS_pb5d30yxKLz0Kx5QAOGr0PT6xDo2Kxm_a1LWlnUk80A-V_kBAc1jLTIv9unbERnYVzDz2ZRJCnsuDy5ZU242biLLQ2tQ1xWhgtnOettQrX6W3M_OEvkTBNiWmgGqZrjhPuBv96MEStAkU_lZfcm9_CyZNTE7yR_nXpBCBtFKi7tpK6HjBNFHkqBujVp4ZAXfrVFslfyrw7FCWb');">
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent">
+            </div>
+            <div class="absolute bottom-0 left-0 p-12 w-full text-white">
+                <div class="mb-6 flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined text-4xl">dentistry</span>
+                </div>
+                <h2 class="text-4xl font-light tracking-tight mb-4">Redefining the <br />Standard of Care.</h2>
+                <div class="flex items-center gap-2 text-white/70 text-sm tracking-widest uppercase">
+                    <span class="w-8 h-[1px] bg-white/50"></span>
+                    <span>Zurich, Switzerland</span>
+                </div>
+            </div>
+        </div>
+        <!-- Right Panel: Content & Form -->
+        <div
+            class="w-full lg:w-7/12 xl:w-1/2 h-full flex flex-col bg-background-light dark:bg-background-dark relative custom-scrollbar overflow-y-auto">
+            <!-- Navbar -->
+            <header
+                class="flex items-center justify-between px-6 py-5 md:px-12 border-b border-[#f0f2f4] dark:border-white/5 bg-white/50 dark:bg-[#111621]/80 backdrop-blur-md sticky top-0 z-20">
+                <div class="flex items-center gap-3 text-primary">
+                    <span class="material-symbols-outlined text-3xl">local_hospital</span>
+                    <h2 class="text-[#111317] dark:text-white text-lg font-bold leading-tight tracking-tight">Zurich
+                        Dental</h2>
+                </div>
+                <button
+                    class="group flex items-center gap-2 text-sm font-medium text-[#646f87] hover:text-primary transition-colors">
+                    <span>Close</span>
+                    <span
+                        class="material-symbols-outlined text-lg bg-[#f0f2f4] rounded-full p-1 group-hover:bg-primary/10 transition-colors">close</span>
+                </button>
+            </header>
+            <!-- Main Content Container -->
+            <main class="flex-1 flex flex-col items-center py-10 px-6 md:px-12">
+                <div class="w-full max-w-xl">
+                    <!-- Heading -->
+                    <div class="mb-10">
+                        <span class="text-primary text-sm font-bold tracking-widest uppercase mb-2 block">Contact
+                            Us</span>
+                        <h1
+                            class="text-[#111317] dark:text-white text-4xl md:text-5xl font-extrabold leading-[1.1] tracking-tight mb-4">
+                            Begin Your <br />Journey
+                        </h1>
+                        <p class="text-[#646f87] dark:text-gray-400 text-lg font-normal leading-relaxed">
+                            Experience world-class dental care. Fill out the form below to schedule your personalized
+                            consultation with our specialists.
+                        </p>
+                    </div>
+                    <!-- Form -->
+                    <form action="#" class="flex flex-col gap-6" method="POST">
+                        <!-- Name & Email Row -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <label class="flex flex-col gap-2">
+                                <span class="text-[#111317] dark:text-white text-sm font-semibold">Full Name</span>
+                                <div class="relative">
+                                    <input
+                                        class="form-input w-full rounded-lg border border-[#dcdfe5] dark:border-gray-700 bg-white dark:bg-[#1a202e] text-[#111317] dark:text-white px-4 py-3.5 pl-11 text-base placeholder:text-[#9ca3af] focus:outline-none focus:ring-0 focus:border-primary"
+                                        placeholder="Enter your full name" required="" type="text" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xl">person</span>
+                                </div>
+                            </label>
+                            <label class="flex flex-col gap-2">
+                                <span class="text-[#111317] dark:text-white text-sm font-semibold">Email Address</span>
+                                <div class="relative">
+                                    <input
+                                        class="form-input w-full rounded-lg border border-[#dcdfe5] dark:border-gray-700 bg-white dark:bg-[#1a202e] text-[#111317] dark:text-white px-4 py-3.5 pl-11 text-base placeholder:text-[#9ca3af] focus:outline-none focus:ring-0 focus:border-primary"
+                                        placeholder="name@example.com" required="" type="email" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xl">mail</span>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- Phone & Country Row -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <label class="flex flex-col gap-2">
+                                <span class="text-[#111317] dark:text-white text-sm font-semibold">Phone Number</span>
+                                <div class="relative">
+                                    <input
+                                        class="form-input w-full rounded-lg border border-[#dcdfe5] dark:border-gray-700 bg-white dark:bg-[#1a202e] text-[#111317] dark:text-white px-4 py-3.5 pl-11 text-base placeholder:text-[#9ca3af] focus:outline-none focus:ring-0 focus:border-primary"
+                                        placeholder="+41 79 000 00 00" required="" type="tel" />
+                                    <span
+                                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xl">call</span>
+                                </div>
+                            </label>
+                            <label class="flex flex-col gap-2">
+                                <span class="text-[#111317] dark:text-white text-sm font-semibold">Country of
+                                    Residence</span>
+                                <div class="relative">
+                                    <select
+                                        class="form-input w-full appearance-none rounded-lg border border-[#dcdfe5] dark:border-gray-700 bg-white dark:bg-[#1a202e] text-[#111317] dark:text-white px-4 py-3.5 pl-11 text-base focus:outline-none focus:ring-0 focus:border-primary"
+                                        required="">
+                                        <option disabled="" selected="" value="">Select a country</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="FR">France</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="OT">Other</option>
+                                    </select>
+                                    <span
+                                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xl">public</span>
+                                    <span
+                                        class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl pointer-events-none">expand_more</span>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- Message -->
+                        <label class="flex flex-col gap-2">
+                            <span class="text-[#111317] dark:text-white text-sm font-semibold">How can we help
+                                you?</span>
+                            <textarea
+                                class="form-input w-full rounded-lg border border-[#dcdfe5] dark:border-gray-700 bg-white dark:bg-[#1a202e] text-[#111317] dark:text-white px-4 py-3 text-base placeholder:text-[#9ca3af] resize-none focus:outline-none focus:ring-0 focus:border-primary"
+                                placeholder="Please describe your needs or preferred appointment time..." required=""
+                                rows="4"></textarea>
+                        </label>
+                        <!-- Consent -->
+                        <label class="flex items-start gap-3 mt-2 cursor-pointer group">
+                            <div class="relative flex items-center">
+                                <input
+                                    class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-[#dcdfe5] dark:border-gray-600 bg-white dark:bg-[#1a202e] checked:bg-primary checked:border-primary transition-all"
+                                    required="" type="checkbox" />
+                                <span
+                                    class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[16px] text-white opacity-0 peer-checked:opacity-100 pointer-events-none">check</span>
+                            </div>
+                            <span
+                                class="text-sm text-[#646f87] dark:text-gray-400 pt-0.5 leading-tight group-hover:text-[#111317] dark:group-hover:text-gray-200 transition-colors">
+                                I agree to the <a class="text-primary hover:underline" href="#">Privacy Policy</a> and
+                                consent to being contacted regarding my inquiry.
+                            </span>
+                        </label>
+                        <!-- Actions -->
+                        <div class="flex items-center justify-between pt-4 gap-4">
+                            <div class="hidden md:flex items-center gap-2 text-sm text-[#646f87] dark:text-gray-500">
+                                <span class="material-symbols-outlined text-lg">lock</span>
+                                <span>SSL Secure Encryption</span>
+                            </div>
+                            <button
+                                class="flex-1 md:flex-none md:w-auto min-w-[180px] bg-primary hover:bg-[#154199] text-white text-base font-bold h-12 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all hover:shadow-primary/30 active:scale-[0.98] flex items-center justify-center gap-2"
+                                type="submit">
+                                <span>Request Appointment</span>
+                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Footer Info -->
+                    <div
+                        class="mt-16 pt-8 border-t border-[#f0f2f4] dark:border-white/5 flex flex-wrap gap-8 text-sm text-[#646f87] dark:text-gray-500">
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 bg-white dark:bg-white/5 rounded-full shadow-sm">
+                                <span class="material-symbols-outlined text-primary text-xl">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-[#111317] dark:text-white font-bold mb-0.5">Zurich Dental Clinic</p>
+                                <p>Bahnhofstrasse 10<br />8001 Zurich, Switzerland</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 bg-white dark:bg-white/5 rounded-full shadow-sm">
+                                <span class="material-symbols-outlined text-primary text-xl">call</span>
+                            </div>
+                            <div>
+                                <p class="text-[#111317] dark:text-white font-bold mb-0.5">Contact</p>
+                                <p>+41 44 123 45 67<br />info@zurichdental.ch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Luxury Dental Clinic Footer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#194cb3",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "ivory": "#F9F7F2",
+                        "gold": "#C5A059",
+                        "charcoal": "#2C3E50",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-charcoal dark:text-gray-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <!-- Main Content Placeholder to push footer down -->
+        <div class="flex-grow flex items-center justify-center p-10">
+            <div class="text-center space-y-4 max-w-2xl">
+                <h1 class="font-serif text-4xl md:text-6xl text-primary dark:text-white font-bold">Excellence in Swiss
+                    Dental Care</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400">Experience the pinnacle of aesthetics and health.
+                    Scroll down to view the footer design.</p>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <footer
+            class="w-full bg-ivory dark:bg-[#0f141e] border-t border-gold/20 dark:border-gray-800 transition-colors duration-300">
+            <!-- Newsletter CTA Strip -->
+            <div class="border-b border-gray-200/60 dark:border-gray-800">
+                <div class="max-w-[1280px] mx-auto px-6 py-12 md:py-16">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                        <div class="text-center lg:text-left max-w-xl">
+                            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary dark:text-white mb-3">
+                                Join our exclusive circle
+                            </h2>
+                            <p class="text-gray-600 dark:text-gray-400 text-base md:text-lg font-light leading-relaxed">
+                                Subscribe for insights on dental aesthetics, seasonal offers, and the art of the perfect
+                                smile.
+                            </p>
+                        </div>
+                        <div class="w-full max-w-md">
+                            <form
+                                class="flex w-full items-stretch rounded-full bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700 p-1 group focus-within:ring-1 focus-within:ring-gold/50 transition-all duration-300">
+                                <input
+                                    class="w-full bg-transparent border-none text-gray-800 dark:text-white placeholder-gray-400 focus:ring-0 px-6 py-3 text-base rounded-l-full"
+                                    placeholder="Enter your email address" type="email" />
+                                <button
+                                    class="flex items-center justify-center bg-primary hover:bg-[#154199] text-white px-6 md:px-8 py-2 rounded-full transition-colors duration-300 shrink-0"
+                                    type="button">
+                                    <span class="font-bold tracking-wide text-sm md:text-base">Subscribe</span>
+                                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Footer Content -->
+            <div class="max-w-[1280px] mx-auto px-6 py-16 md:py-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+                    <!-- Column 1: Brand -->
+                    <div class="lg:col-span-4 flex flex-col items-center lg:items-start space-y-6">
+                        <a class="flex items-center gap-3 group" href="#">
+                            <div
+                                class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-lg flex items-center justify-center shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
+                                <span class="material-symbols-outlined text-2xl md:text-3xl">dentistry</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span
+                                    class="font-serif text-2xl font-bold text-primary dark:text-white leading-none">LUXURY</span>
+                                <span class="text-xs uppercase tracking-[0.2em] text-gold font-medium">Dental
+                                    Clinic</span>
+                            </div>
+                        </a>
+                        <p class="text-center lg:text-left text-gray-600 dark:text-gray-400 leading-relaxed max-w-sm">
+                            Combining Swiss precision with premium hospitality. We redefine dental care for an
+                            international clientele seeking perfection.
+                        </p>
+                        <div class="flex items-center gap-4 pt-4">
+                            <a aria-label="Instagram"
+                                class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center text-primary dark:text-gray-400 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+                                href="#">
+                                <span class="material-symbols-outlined text-lg">photo_camera</span>
+                                <!-- Instagram proxy -->
+                            </a>
+                            <a aria-label="LinkedIn"
+                                class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center text-primary dark:text-gray-400 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+                                href="#">
+                                <span class="material-symbols-outlined text-lg">business_center</span>
+                                <!-- LinkedIn proxy -->
+                            </a>
+                            <a aria-label="Facebook"
+                                class="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center text-primary dark:text-gray-400 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+                                href="#">
+                                <span class="material-symbols-outlined text-lg">public</span> <!-- Facebook proxy -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Column 2: Treatments -->
+                    <div class="lg:col-span-2 lg:col-start-6 flex flex-col items-center lg:items-start">
+                        <h3 class="font-serif text-lg font-semibold text-primary dark:text-white mb-6">Treatments</h3>
+                        <ul class="flex flex-col gap-4 text-center lg:text-left">
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Implants</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Aesthetics</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Orthodontics</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Oral Surgery</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Prevention</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3: Patient Care -->
+                    <div class="lg:col-span-2 flex flex-col items-center lg:items-start">
+                        <h3 class="font-serif text-lg font-semibold text-primary dark:text-white mb-6">Patient Care</h3>
+                        <ul class="flex flex-col gap-4 text-center lg:text-left">
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">International Patients</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Concierge Services</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Our Experts</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">Pricing &amp; Finance</a></li>
+                            <li><a class="text-gray-600 dark:text-gray-400 hover:text-gold dark:hover:text-gold transition-colors duration-200 text-sm md:text-base"
+                                    href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4: Contact -->
+                    <div class="lg:col-span-3 flex flex-col items-center lg:items-start">
+                        <h3 class="font-serif text-lg font-semibold text-primary dark:text-white mb-6">Contact Us</h3>
+                        <div class="flex flex-col gap-6 w-full">
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-gold mt-1 shrink-0">location_on</span>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base leading-relaxed">
+                                    Bahnhofstrasse 123<br />
+                                    8001 Zurich, Switzerland
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <span class="material-symbols-outlined text-gold shrink-0">call</span>
+                                <a class="text-gray-600 dark:text-gray-400 text-sm md:text-base group-hover:text-primary dark:group-hover:text-white transition-colors"
+                                    href="tel:+41441234567">
+                                    +41 44 123 45 67
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <span class="material-symbols-outlined text-gold shrink-0">mail</span>
+                                <a class="text-gray-600 dark:text-gray-400 text-sm md:text-base group-hover:text-primary dark:group-hover:text-white transition-colors"
+                                    href="mailto:concierge@luxurydental.ch">
+                                    concierge@luxurydental.ch
+                                </a>
+                            </div>
+                            <!-- Subtle Map Indicator -->
+                            <a class="mt-2 inline-flex items-center text-xs font-bold text-primary dark:text-white uppercase tracking-wider hover:text-gold dark:hover:text-gold transition-colors"
+                                href="#">
+                                View on Map <span class="material-symbols-outlined text-sm ml-1">arrow_outward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Legal Bar -->
+            <div class="bg-primary/5 dark:bg-black/20 border-t border-primary/5 dark:border-gray-800">
+                <div class="max-w-[1280px] mx-auto px-6 py-8">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500 dark:text-gray-500">
+                        <p class="order-2 md:order-1">© 2024 Luxury Dental Clinic. All rights reserved.</p>
+                        <div class="flex flex-wrap justify-center gap-8 order-1 md:order-2">
+                            <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy
+                                Policy</a>
+                            <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of
+                                Service</a>
+                            <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Imprint</a>
+                            <a class="hover:text-primary dark:hover:text-white transition-colors" href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
